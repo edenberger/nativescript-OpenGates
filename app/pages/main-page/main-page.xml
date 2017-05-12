@@ -1,0 +1,25 @@
+<Page navigatingTo="onNavigatingTo" xmlns:Gradient="nativescript-gradient">
+  <Page.actionBar>
+    <ActionBar class="action-bar">
+      <StackLayout orientation="horizontal" android:horizontalAlignment="left">
+        <Label text="Open Gates"></Label>
+      </StackLayout>
+    </ActionBar>
+  </Page.actionBar>
+  <Gradient:Gradient height="100%" startColor="#9e9e9e" endColor="#000000" orientation="UP_DOWN" >
+    <DockLayout stretchLastChild="false">
+      <Image id="image" class="image" dock="top"/>
+      <GridLayout rows="auto, auto, auto" columns="auto, *, 80" dock="bottom">
+        <Button id="1" row="0" col="0" text="Change" tap="{{ changeValues }}" />
+        <Button id="2" row="1" col="0" text="Change" tap="{{ changeValues }}" />
+        <Button id="3" row="2" col="0" text="Change" tap="{{ changeValues }}" />
+        <Label id="1" row="0" col="1" text="{{ number1 }}" tap="{{ changeValues }}" class="label" textWrap="true" />
+        <Label id="2" row="1" col="1" text="{{ number2 }}" tap="{{ changeValues }}" class="label" textWrap="true" />
+        <Label id="3" row="2" col="1" text="{{ number3 }}" tap="{{ changeValues }}" class="label" textWrap="true" />
+        <Label id="1" row="0" col="2" text="{{ key1 }}" tap="{{ changeValues }}" class="label" textWrap="true" />
+        <Label id="2" row="1" col="2" text="{{ key2 }}" tap="{{ changeValues }}" class="label" textWrap="true" />
+        <Label id="3" row="2" col="2" text="{{ key3 }}" tap="{{ changeValues }}" class="label" textWrap="true" />
+      </GridLayout>
+    </DockLayout>
+  </Gradient:Gradient>
+</Page>

@@ -1,0 +1,15 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded" navigatedTo="onNavigatedTo">
+    <Page.actionBar>
+        <ActionBar title="Settings" icon="">
+            <ActionBar.actionItems>
+                <ActionItem text="Save" tap="save"/>
+            </ActionBar.actionItems>
+        </ActionBar>
+    </Page.actionBar>
+    <DockLayout stretchLastChild="false">
+      <Label text="Phone number:" textWrap="true" dock="top"/>
+      <TextField keyboardType="number" hint="Long press for contacts" dock="top" id="phone"/>
+      <Label text="Keyword:" textWrap="true" dock="top"/>
+      <TextField hint="Back" id="key" dock="top"/>
+    </DockLayout>
+</Page>
